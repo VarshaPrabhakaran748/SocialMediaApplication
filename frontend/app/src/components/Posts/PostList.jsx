@@ -7,8 +7,6 @@ import Message from "../Message";
 function PostList({ posts, fetchPosts ,startChartHandler}) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [message, setMessage] = useState("");
-  const handleClose = () => setMessage("");
   const [commentContent, setCommentContent] = useState({});
 
   const submitCommentHandler = async (postId) => {

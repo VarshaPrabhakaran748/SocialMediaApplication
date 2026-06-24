@@ -7,8 +7,6 @@ import Message from "../Message";
 function PostForm({ fetchPosts }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [message, setMessage] = useState("");
-  const handleClose = () => setMessage("");
   const [content, setContent] = useState("");
   const [image, setImage] = useState(null);
 
